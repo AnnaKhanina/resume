@@ -1,0 +1,12 @@
+@mixin font($fz, $fw, $lh, $ls) {
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin media($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
