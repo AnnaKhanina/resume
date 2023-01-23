@@ -17,18 +17,106 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!--About me section-->
+    <!--Sidebar sections-->
+    <section class="skills section">
+        <aside class="sidebar-section">
+            <!--img src="" alt="my photo"-->
+            <div class="contacts">
+                <h3 class="sidebar__title title">Contacts</h3>
+            <div>
+                <span class="contacts-type">Cell phone:</span>
+                    <a class="contacts-type__link" href="tell:068 380 32 14">+38 068 380 32 14</a>
+                </div>
+            <div>
+                <span class="contacts-type">Email:</span>
+                    <a class="contact-type__link"
+                        href="mailto:khanina.anna85@gmail.com">khanina.anna85@gmail.com</a>
+                </div>
+            <div>
+                <span class="contacts-type">LinkedIn:</span>
+                    <a class="contacts-type__link" href="https://www.linkedin.com/in/anna-khanina-906649204"
+                        target="_blank">Anna Khanina</a>
+            </div>
+            </div>
+            <!--Languages-->
+            <div class="languages">
+                <h3 class="languages__title title">Languages</h3>
+                <ul class="languages-list">
+                    <li class="languages__item">English: B2-Upper Intermediate</li>
+                    <li class="languages__item">Ukrainian: native</li>
+                </ul>
+            </div>   
+            <!-- Tech Skills section-->
+            <div class="tech-skills">
+                <h3 class="sidebar__title title">Tech Skills</h3>
+                <ul class="tech-skills-list">
+                    <li class="tech-skills__item"> <span class="tech-skills__item-text">Knowledge of HTML, CSS, Javascript</span></li>
+                    <li class="tech-skills__item"> <span class="tech-skills__item-text">Using of methodology : BEM and preprocessor SASS</span></li>
+                    <li class="tech-skills__item"> <span class="tech-skills__item-text">Ability to use flex to build a grid</span></li>
+                    <li class="tech-skills__item"> <span class="tech-skills__item-text">Knowledge of media queries, Mobile First strategy</span></span></li>                        
+                    <li class="tech-skills__item"> <span class="tech-skills__item-text">Creating React Apps</span></span></li>
+                    <li class="tech-skills__item"> <span class="tech-skills__item-text">Experience in developing applications based on Node.js</span></span></li>
+                    <li class="tech-skills__item"> <span class="tech-skills__item-text">Working with databases: MySQL, MongoDB</span></li>
+                    <li class="tech-skills__item"> <span class="tech-skills__item-text">Using VSCode and many of its extensions for the convenience of web development</span></li>
+                    <li class="tech-skills__item"> <span class="tech-skills__item-text">Working with Figma graphics editor</span></li>
+                    <li class="tech-skills__item"> <span class="tech-skills__item-text">Testing and checking for code errors</span></li>
+                </ul>
+            </div>
+            <!--Soft Skills-->
+            <div class="soft-skills">
+                <h3 class="sidebar__title title">Soft Skills</h3>
+                <ul class="soft-skills-list">
+                    <li class="soft-Skills__item"> <span class="soft-Skills__item-text">Willingness to improve your professional and technical level</span></li>
+                    <li class="soft-Skills__item"> <span class="soft-Skills__item-text">Attention, perseverance, fast learner</span></li>
+                    <li class="soft-Skills__item"> <span class="soft-Skills__item-text">Compliance with deadlines</span></li>
+                    <li class="soft-Skills__item"> <span class="soft-Skills__item-text">Ability to work in a team as well as independently</span></li>
+                </ul>
+            </div>
+        </aside>               
+</section>
+    <!--Personal section-->
+    <section class="personal-section section">
+        <div class="main-conteiner container">
+            <div class="personal">
+                <h1 class="personal__name">Anna Khanina</h1>
+                <h2 class="personal__profession">Web Developer</h2>
+                <h3 class="personal__location">Kharkiv, Ukraine</h3>                
+            </div>
+            <div class="personal-photo">
+                <img src="./images/avatar.jpg" alt="my photo" width="100px" height="100px">
+            </div>
+            <p>Getting a position as a web daveloper</p>
+        </div>    
+    </section>
+    <!--My education section-->
+    <section class="my-education-section section">
+        <div class="my-education">
+            <h3 class="main-content__title title">Education</h3>
+            <h4><span class="my-education__institution">Kharkiv Radio Engineering College, Programmer</span></h4>
+            <p class="experience__period">September 2002-June 2005</p>
+        </div>
+        <div class="my-courses">            
+            <h3 class="my-courses__title title">Courses</h3>
+            <ul class="my-courses-list">
+                <li class="my-courses__item">
+                    <h4><span class="my-courses__institution">Software Testing</span></h4>
+                    <p class="My-work-experience-period">November 2021-December 2022</p>
+                </li>
+                <li class="my-courses__item">
+                    <h4><span class="my-courses__institution">GoIT-FullStack Developer</span></h4>
+                    <p class="My-work-experience-period">November 2021-December 2022</p>
+                </li>            
+        </div>
+    </section>
     <section class="about-me-section section">
         <div class="main-conteiner container">
-            <div class="about-me">
-                <h2 class="about-me__profession">Web Developer</h2>
-                <h1 class="about-me__name">Anna Khanina</h1>
+            <div class="about-me">               
                 <h3 class="main-content__title title">About me</h3>
-                <textarea class="about-me__text">
+                <p class="about-me__text">
                     I am new to web application development. Completed Full Stack Developer courses based on Javascript and its frameworks.
                     I had experience working in a team where the Scrum methodology was applied.
                     I am ready for new opportunities, open to new knowledge and strive to make a quality product.
-                </textarea>
+                </p>
             </div>
         </div>    
     </section>
@@ -73,67 +161,6 @@
                 </div>
             </div>
         </section-->
-        <!--My education section-->
-        <section class="my-education-section section">
-                <div class="my-education">
-                    <h3 class="main-content__title title">Education</h3>
-                    <h4><span class="my-education__institution">Kharkiv Radio Engineering College, Programmer</span></h4>
-                    <p class="experience__period">September 2002 - June 2005</p>
-                </div>
-                <div class="my-courses">
-                    <h3 class="my-courses__title title">Courses</h3>
-                    <h4><span class="my-courses__institution">GoIT- FullStack Developer</span></h4>
-                    <p class="My-work-experience-period">November 2021 – December 2022</p>
-                </div>
-        </section>
-        <!--Sitebar sections-->
-        <section class="skills section">
-                <aside class="sitebar-section">
-                    <img src="" alt="my photo">
-                    <div class="contacts">
-                        <h3 class="sitebar__title title">Contacts</h3>
-                    <div>
-                        <span class="contacts-type">Cell phone:</span>
-                            <a class="contacts-type__link" href="tell:068 380 32 14">+38 068 380 32 14</a>
-                        </div>
-                    <div>
-                        <span class="contacts-type">Email:</span>
-                            <a class="contact-type__link"
-                                href="mailto:khanina.anna85@gmail.com">khanina.anna85@gmail.com</a>
-                        </div>
-                    <div>
-                        <span class="contacts-type">LinkedIn:</span>
-                            <a class="contacts-type__link" href="https://www.linkedin.com/in/anna-khanina-906649204"
-                                target="_blank">Anna Khanina</a>
-                    </div>
-                    </div>
-                    <!-- Tech Skills section-->
-                    <div class="tech-skills">
-                        <h3 class="sitebar__title title">Tech Skills</h3>
-                        <ul class="tech-skills-list">
-                            <li class="tech-skills__item"> <span class="tech-skills__item-text">Knowledge of HTML, CSS, Javascript</span></li>
-                            <li class="tech-skills__item"> <span class="tech-skills__item-text">Using of methodology : BEM and preprocessor SASS</span></li>
-                            <li class="tech-skills__item"> <span class="tech-skills__item-text">Ability to use flex to build a grid</span></li>
-                            <li class="tech-skills__item"> <span class="tech-skills__item-text">Knowledge of media queries, Mobile First strategy</span></span></li>                        
-                            <li class="tech-skills__item"> <span class="tech-skills__item-text">Creating React Apps</span></span></li>
-                            <li class="tech-skills__item"> <span class="tech-skills__item-text">Experience in developing applications based on Node.js</span></span></li>
-                            <li class="tech-skills__item"> <span class="tech-skills__item-text">Working with databases: MySQL, MongoDB</span></li>
-                            <li class="tech-skills__item"> <span class="tech-skills__item-text">Using VSCode and many of its extensions for the convenience of web development</span></li>
-                            <li class="tech-skills__item"> <span class="tech-skills__item-text">Working with Figma graphics editor</span></li>
-                            <li class="tech-skills__item"> <span class="tech-skills__item-text">Testing and checking for code errors</span></li>
-                        </ul>
-                    </div>
-                    <!--Soft Skills-->
-                    <div class="soft-skills">
-                        <h3 class="sitebar__title title">Soft Skills</h3>
-                        <ul class="soft-skills-list">
-                            <li class="soft-Skills__item"> <span class="soft-Skills__item-text">Willingness to improve your professional and technical level</span></li>
-                            <li class="soft-Skills__item"> <span class="soft-Skills__item-text">Attention, perseverance, fast learner</span></li>
-                            <li class="soft-Skills__item"> <span class="soft-Skills__item-text">Compliance with deadlines</span></li>
-                            <li class="soft-Skills__item"> <span class="soft-Skills__item-text">Ability to work in a team as well as independently</span></li>
-                        </ul>
-                    </div>
-                </aside>               
-        </section>          
+        <!--My education section-->                       
 </body>
 </html>
