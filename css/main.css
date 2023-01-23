@@ -28,20 +28,13 @@ ul {
   padding: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-}
-
 :root {
   --header-text-color: #212121;
   --link-list-color: #757575;
   --address-list-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
   --accent-filters-color: #ffffff;
-  --background-color: #2f303a;
+  --background-color: #e7d6fa;
   --background-color-secondary: #f5f4fa;
   --border-color: #eeeeee;
   --socials-icon-color: #afb1b8;
@@ -86,6 +79,21 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.sidebar-section {
+  height: 100%;
+  width: 400px;
+  position: fixed;
+  background-color: var(--background-color);
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.main-section {
+  margin-left: 260px;
+  font-size: 24px;
+  padding: 0px 50px;
 }
 
 .title {
