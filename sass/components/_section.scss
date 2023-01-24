@@ -1,23 +1,31 @@
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @include media(1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
+// .section {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+//   @include media(1200px) {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//   }
+// }
 
 .sidebar-section { 
   height: 100%;
-  width: 400px;
+  width: 200px;
   position: fixed; 
   background-color: var(--background-color);  
   padding-top: 20px;
   padding-left: 40px;
+  @include media(768px) {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .main-section {
-  margin-left: 260px; 
-  font-size: 24px; 
-  padding: 0px 50px;
+  margin-left: 260px;   
+  padding-top: 20px; 
+  position: fixed; 
+  @include media(768px) {
+    margin-left: 460px; 
+  }  
 }

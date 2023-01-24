@@ -28,6 +28,10 @@ ul {
   padding: 0;
 }
 
+li {
+  display: block;
+}
+
 :root {
   --header-text-color: #212121;
   --link-list-color: #757575;
@@ -40,6 +44,14 @@ ul {
   --socials-icon-color: #afb1b8;
   --footer-icon-color: rgba(255, 255, 255, 0.1);
   --modal-btn-color: #188ce8;
+}
+
+.main {
+  margin: auto;
+  width: 320px;
+  max-width: 1200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .container {
@@ -70,36 +82,37 @@ ul {
   }
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .sidebar-section {
   height: 100%;
-  width: 400px;
+  width: 200px;
   position: fixed;
   background-color: var(--background-color);
   padding-top: 20px;
   padding-left: 40px;
 }
+@media screen and (min-width: 768px) {
+  .sidebar-section {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .main-section {
   margin-left: 260px;
-  font-size: 24px;
-  padding: 0px 50px;
+  padding-top: 20px;
+  position: fixed;
+}
+@media screen and (min-width: 768px) {
+  .main-section {
+    margin-left: 460px;
+  }
 }
 
 .title {
   margin-bottom: 30px;
   color: var(--header-text-color);
-  text-align: center;
+  text-align: start;
   font-size: 28px;
   font-weight: 700;
   line-height: 33px;
@@ -111,4 +124,19 @@ ul {
     line-height: 42px;
     margin-bottom: 50px;
   }
+}
+
+.personal > img {
+  float: right;
+  margin-right: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .personal > img {
+    margin-right: 500px;
+  }
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 30px;
 }/*# sourceMappingURL=main.css.map */
