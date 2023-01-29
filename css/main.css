@@ -37,21 +37,11 @@ li {
   --link-list-color: #757575;
   --address-list-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
-  --accent-filters-color: #ffffff;
-  --background-color: #e7d6fa;
-  --background-color-secondary: #f5f4fa;
+  --background-color: #e0ccf7;
+  --background-color-secondary: #ffffff;
   --border-color: #eeeeee;
   --socials-icon-color: #afb1b8;
   --footer-icon-color: rgba(255, 255, 255, 0.1);
-  --modal-btn-color: #188ce8;
-}
-
-.main {
-  margin: auto;
-  width: 320px;
-  max-width: 1200px;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .container {
@@ -82,30 +72,14 @@ li {
   }
 }
 
-.sidebar-section {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  background-color: var(--background-color);
-  padding-top: 20px;
-  padding-left: 40px;
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-@media screen and (min-width: 768px) {
-  .sidebar-section {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.main-section {
-  margin-left: 260px;
-  padding-top: 20px;
-  position: fixed;
-}
-@media screen and (min-width: 768px) {
-  .main-section {
-    margin-left: 460px;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -126,17 +100,50 @@ li {
   }
 }
 
-.personal > img {
+.personal-section > img {
   float: right;
-  margin-right: 20px;
-}
-@media screen and (min-width: 1200px) {
-  .personal > img {
-    margin-right: 500px;
-  }
+  margin-right: 15px;
 }
 
 .avatar {
   width: 100px;
   border-radius: 30px;
+}
+@media screen and (min-width: 768px) {
+  .avatar {
+    width: 200px;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .main-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main__item {
+    flex-basis: calc((100% - 30px) / 2);
+    padding: 10px;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  .main__item:last-child {
+    background-color: var(--background-color-secondary);
+  }
 }/*# sourceMappingURL=main.css.map */
