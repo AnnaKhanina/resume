@@ -39,17 +39,16 @@
 }
 
 .personal__name {
-    @include media(768px){
+    @include media(768px) {
         margin-top: 15px;
         margin-bottom: 25px; 
     }
-    
+}    
 
 
 .personal__profession,
 .personal__location {
-    margin-bottom: 20px;
+    @include media(768px) {
+        margin-bottom: 20px;
+    }    
 }
-
-
-

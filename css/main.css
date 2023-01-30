@@ -135,14 +135,18 @@ li {
   }
 }
 
-.personal__name {
-  margin-top: 25px;
-  margin-bottom: 25px;
+@media screen and (min-width: 768px) {
+  .personal__name {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
 }
 
-.personal__profession,
+@media screen and (min-width: 768px) {
+  .personal__profession,
 .personal__location {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
