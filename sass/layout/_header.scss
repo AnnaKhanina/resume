@@ -1,10 +1,55 @@
-// .header {
-//     border-bottom: 1px solid black;
-//   }
-  
-
-.header-container {
+ .header-container {
     display: flex;
     align-items: center;
 }
+
+.header-list {
+    display: flex;
+        flex-wrap: wrap; 
+        gap: 10px; 
+        margin: 0; 
+        padding: 5px;
+        list-style: none;
+        //@include font(14px, 500, 16px, 0.02em);
+    @include media(768px) {
+        gap: 30px;        
+        padding: 15px;      
+    }      
+}
+
+.header__item {  
+    @include media(768px) {
+        &:last-child {
+            margin-left: 160px;                  
+        }     
+    }
+    @include media(1200px) {    
+        &:last-child {
+            margin-left: 450px;                  
+        }     
+    }             
+}  
+
+.avatar {
+    width: 100px;
+    border-radius: 30px;
+    @include media(768px) {
+        width: 200px;
+    }
+}
+
+.personal__name {
+    @include media(768px){
+        margin-top: 15px;
+        margin-bottom: 25px; 
+    }
+    
+
+
+.personal__profession,
+.personal__location {
+    margin-bottom: 20px;
+}
+
+
 

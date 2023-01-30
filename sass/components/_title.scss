@@ -1,10 +1,12 @@
 .title {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   color: var(--header-text-color);
   text-align: start;
-  @include font(28px, 700, 33px, 0.03em);
+  @include font(28px, 500, 33px, 0.03em);
   @include media(1200px) {
     @include font(36px, null, 42px, null);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
