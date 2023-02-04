@@ -10,14 +10,13 @@
         margin: 0; 
         padding: 5px;
         list-style: none;
-        //@include font(14px, 500, 16px, 0.02em);
     @include media(768px) {
         gap: 30px;        
         padding: 15px;      
     }      
 }
 
-.header__item {  
+.header-list__item {  
     @include media(768px) {
         &:last-child {
             margin-left: 160px;                  
@@ -31,10 +30,10 @@
 }  
 
 .avatar {
-    width: 100px;
+    width: 80px;
     border-radius: 30px;
     @include media(768px) {
-        width: 200px;
+        width: 180px;
     }
 }
 
@@ -52,3 +51,4 @@
         margin-bottom: 20px;
     }    
 }
+

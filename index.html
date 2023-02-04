@@ -21,13 +21,13 @@
     <header class="header">
         <div class="header-container container">
             <ul class="header-list">
-                <li class="header__item">
+                <li class="header-list__item">
                     <h1 class="personal__name">Anna Khanina</h1>
                     <h3 class="personal__profession">Web Developer</h3>
                     <h5 class="personal__location">Kharkiv, Ukraine</h5>             
                     <p>Getting a position as a web developer</p> 
                 </li>
-                <li class="header__item">
+                <li class="header-list__item">
                     <img class="avatar" src="./images/avatar.jpg" alt="my photo">
                 </li>                
             </ul>      
@@ -36,63 +36,133 @@
     <!--About me main-->   
     <main>
         <div class="container">                         
-            <ul class="main-list list">
-                <li class="main__item">
+            <ul class="main-list">
+                <li class="main-list__item">
                     <!--Contacts-->
                     <div class="contacts">
-                        <h3 class="title">Contacts</h3>                    
-                        <span class="contacts-type">Cell phone:</span>
-                        <a class="contacts-type__link" href="tell:068 380 32 14">+38 068 380 32 14</a>                      
-                        <span class="contacts-type">Email:</span>
-                        <a class="contact-type__link"
-                            href="mailto:khanina.anna85@gmail.com">khanina.anna85@gmail.com</a>                                        
-                        <span class="contacts-type">LinkedIn:</span>
-                        <a class="contacts-type__link" href="https://www.linkedin.com/in/anna-khanina-906649204"
-                            target="_blank">Anna Khanina</a>  
+                        <h3 class="title">Contacts</h3>                
+                        <a class="contacts-type__link" href="tell:068 380 32 14"><svg class="main-contact-icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                         +38 068 380 32 14
+                        </a>                      
+                        <a class="contacts-type__link" href="mailto:khanina.anna85@gmail.com">
+                            <svg class="main-contact-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                            khanina.anna85@gmail.com
+                        </a> 
+                        <a class="contacts-type__link" href="https://www.linkedin.com/in/anna-khanina-906649204" target="_blank">
+                            <svg class="main-contact-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg> 
+                            Anna Khanina   
+                        </a> 
+                        <a class="contacts-type__link" href="https://www.instagram.com/svetmiru/" target="_blank">
+                            <svg class="main-contact-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg> 
+                            svetmiru   
+                        </a> 
                     </div>                          
                     <div class="languages">
                         <h3 class="title">Languages</h3>                
-                        <p class="languages__text">English: B2-Upper Intermediate</p>
-                        <p class="languages__text">Ukrainian: native</p>                   
+                        <p class="languages__text">
+                            <svg class="tech-skills-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-dot-single"></use>
+                            </svg>English: B2-Upper Intermediate</p>
+                        <p class="languages__text">
+                            <svg class="tech-skills-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-dot-single"></use>
+                            </svg>Ukrainian: native</p>                   
                     </div>                      
                     <!-- Tech Skills-->
                     <div class="tech-skills">
                         <h3 class="title">Tech Skills</h3>                            
-                            <p class="tech-skills__text">Knowledge of HTML, CSS, Javascript</p>
-                            <p class="tech-skills__text">Using of methodology : BEM and preprocessor SASS</p>
-                            <p class="tech-skills__text">Ability to use flex to build a grid</p>
-                            <p class="tech-skills__text">Knowledge of media queries, Mobile First strategy</p>                        
-                            <p class="tech-skills__text">Creating React Apps</p>
-                            <p class="tech-skills__text">Experience in developing applications based on Node.js</p>
-                            <p class="tech-skills__text">Working with databases: MySQL, MongoDB</p>
-                            <p class="tech-skills__text">Using VSCode and many of its extensions for the convenience of web development</p>
-                            <p class="tech-skills__text">Working with Figma graphics editor</p>
-                            <p class="tech-skills__text">Testing and checking for code errors</p>
+                            <p class="tech-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg> Knowledge of HTML, CSS, Javascript</p>
+                            <p class="tech-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg> Using of methodology : BEM and preprocessor SASS</p>
+                            <p class="tech-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg> Ability to use flex to build a grid</p>
+                            <p class="tech-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg> Knowledge of media queries, Mobile First strategy</p>                        
+                            <p class="tech-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg> Creating React Apps</p>
+                            <p class="tech-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg> Experience in developing applications based on Node.js</p>
+                            <p class="tech-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg> Working with databases: MySQL, MongoDB</p>
+                            <p class="tech-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg> Using VSCode and many of its extensions for the convenience of web development</p>
+                            <p class="tech-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg> Working with Figma graphics editor</p>
+                            <p class="tech-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg> Testing and checking for code errors</p>
                     </div>                                  
                     <!--Soft Skills-->
                     <div class="soft-skills">
                         <h3 class="title">Soft Skills</h3>                            
-                            <p class="soft-skills__text">Willingness to improve your professional and technical level</p>
-                            <p class="soft-skills__text">Attention, perseverance, fast learner</p>
-                            <p class="soft-skills__text">Compliance with deadlines</p>
-                            <p class="soft-skills__text">Ability to work in a team as well as independently</p>                           
+                            <p class="soft-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg> Willingness to improve your professional and technical level</p>
+                            <p class="soft-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg>Attention, perseverance, fast learner</p>
+                            <p class="soft-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg>Compliance with deadlines</p>
+                            <p class="soft-skills__text">
+                                <svg class="tech-skills-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg>Ability to work in a team as well as independently</p>                           
                     </div>
                 </li>                                
-                <li class="main__item"> 
+                <li class="main-list__item"> 
                     <!--My education-->          
                     <div class="my-education">
                         <h3 class="title">Education</h3>
                         <h4>Kharkiv Radio Engineering College, Programmer</h4>
                         <p class="experience__period">September 2002-June 2005</p>
-                    </div>             
-                    <!--My courses-->
-                    <div class="my-courses">            
-                        <h3 class="title">Courses</h3>                           
-                        <h4>Software Testing</h4>
-                        <p class="My-work-experience-period">November 2021-December 2022</p>
-                        <h4>GoIT-FullStack Developer</h4>
-                        <p class="My-work-experience-period">November 2021-December 2022</p>  
-                    </div>                  
+                    </div>                                              
+                    <div class="my-courses">
+                        <h3 class="title">Courses</h3> 
+                       <ul class="my-courses-list">
+                            <li class="my-courses__item">
+                                <img class="my-courses__img" src="./images/skillup.png" alt="skillup">
+                                <h4>SkillUp: Software Testing</h4>
+                                <p class="my-courses__period">October 2020-March 2021</p>
+                            </li>
+                            <li class="my-courses__item">
+                                <img class="my-courses__img" src="./images/goit.png" alt="goit" width="82" height="47">
+                                <h4>GoIT: FullStack Developer</h4>
+                                <p class="my-courses__period">November 2021-December 2022</p>
+                            </li>                        
+                       </ul>
+                    </div>                                          
                     <!--About me-->
                     <div class="about-me">               
                         <h3 class="title">About me</h3>
@@ -106,12 +176,31 @@
                     <div class="my-projects">
                         <h3 class="title">Projects</h3>    
                         <p class="experience__period">Experience period: 2021-2022</p>                   
-                        <a href="https://annakhanina.github.io/goit-markup-hw-08/" class="my-projects__link" target="_blank">My first project</a> 
-                        <a href=" https://annakhanina.github.io/goit-js-hw-11/" class="my-projects__link" target="_blank">JavaScript project</a> 
-                        <a href="https://annakhanina.github.io/phonebook-app/" class="my-projects__link" target="_blank">React project</a> 
-                        <a href="https://aegisvp.github.io/InSight-web/" class="my-projects__link" target="_blank">Team project</a>                        
-                    </div>                    
-            </div>
+                        <a href="https://annakhanina.github.io/goit-markup-hw-08/" class="my-projects__link" target="_blank">
+                            <svg class="tech-skills-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-checkmark2"></use>
+                            </svg> Wed Studio</a> 
+                        <a href=" https://annakhanina.github.io/goit-js-hw-11/" class="my-projects__link" target="_blank">
+                            <svg class="tech-skills-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-checkmark2"></use>
+                            </svg> Image finder</a> 
+                        <a href="https://annakhanina.github.io/phonebook-app/" class="my-projects__link" target="_blank">
+                            <svg class="tech-skills-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-checkmark2"></use>
+                            </svg> PhoneBook</a> 
+                        <a href="https://viktoriiahdev.github.io/team-project-ice-cream/" class="my-projects__link" target="_blank">
+                            <svg class="tech-skills-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-checkmark2"></use>
+                            </svg> IceCream(team project)</a>
+                        <a href="https://glagolio.github.io/filmoteka-group-08/" class="my-projects__link" target="_blank">
+                            <svg class="tech-skills-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-checkmark2"></use>
+                            </svg> Filmoteka(team project)</a>
+                        <a href="https://aegisvp.github.io/InSight-web/" class="my-projects__link" target="_blank">
+                            <svg class="tech-skills-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-checkmark2"></use>
+                            </svg> InSight(team project)</a>                        
+                    </div>                  
                 </li>
             </ul>             
         </div>            

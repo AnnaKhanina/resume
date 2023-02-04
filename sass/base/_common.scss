@@ -1,16 +1,15 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--header-text-color);
-  padding-top: 60px;
- 
+  color: var(--header-text-color);  
 }
 
 .list {
   padding: 0;
   margin: 0;
-  list-style: none;
+  //list-style: none;
 }
 
 a {
   text-decoration: none;
+  outline: none;
 }
