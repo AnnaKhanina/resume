@@ -2,11 +2,15 @@
   margin-bottom: 10px;
   margin-top: 10px;
   color: var(--header-text-color);
-  text-align: start;
-  @include font(28px, 500, 33px, 0.03em);
+  //text-align: center;
+  @include font(20px, 500, 33px, 0.03em);
+  @include media(768px) {
+    text-align: center;
+  }
   @include media(1200px) {
-    @include font(36px, null, 42px, null);
+    @include font(25px, null, 32px, null);
     margin-bottom: 20px;
     margin-top: 20px;
+    //text-align: center;
   }
 }
