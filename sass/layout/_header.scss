@@ -1,4 +1,19 @@
- .header-list {  
+.header-personal{
+    @include media(480px) {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 10px;  
+        padding: 0;
+        margin: 0;
+        list-style: none; 
+    }
+}
+
+.header-list {
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     @include media(768px) {
         display: flex;
         flex-wrap: wrap; 
@@ -6,7 +21,7 @@
         padding: 0;
         margin: 0;
         list-style: none;                      
-    }       
+    } 
 }
 
 .header-list__item {        
@@ -15,38 +30,101 @@
         flex-basis: calc((100% - 20px) / 2);  
         padding: 10px;
         background-color: var(--background-color-secondary);        
-            &:last-child {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                text-align: center;
-                background-color: var(--background-color);
-            } 
-    }        
-}  
+        &:last-child {
+            background-color: var(--background-color);
+        } 
+    }  
+} 
 
-.avatar {
+ .header-contacts {
+    display: flex;
+    flex-direction: column;   
+ }
+
+ .header__title {
+    @media (max-width: 767px) {
+        @include font(25px, 700, 18px, 0.02em);
+    }   
+ }
+
+ .header-contacts__link {
+    padding: 1px;
+    color: var(--header-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include font(16px, 700, 18px, 0.02em);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    @include media(768px) {
+        padding: 3px;
+    }
+ }
+
+ .header-contacts__icon {
+    padding-right: 5px;
+}
+
+.header-personal__data,
+.header-personal__image {
+    padding: 5px; 
+    @include media(320px) {
+        flex-basis: calc((100% - 20px) / 2);  
+        padding: 5px;       
+    }    
+}
+
+.header-personal__image {
+    @media (max-width: 320px) {
+        display: none;
+    }
+}
+
+.header-avatar {
     width: 80px;
     border-radius: 50px;
+    @include media(320px) {
+        border-radius: 20px;
+    }
     @include media(768px) {
-        width: 150px;
-        // margin-left: 187px;
-        
+        width: 100px;       
+    }
+    @include media(1200px) {
+        width: 110px;       
     }
 }
 
 .personal__name {
     @include media(768px) {
-        margin-top: 15px;
-        margin-bottom: 25px; 
+        margin-bottom: 10px; 
     }
 }    
 
-
-.personal__profession,
-.personal__location {
+.header-personal__profession {
+    @include media(320px) {
+        margin-bottom: 5px; 
+    }
     @include media(768px) {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }    
+}
+
+.header-personal__link {
+    color: var(--header-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }   
+}
+
+.header-personal__position {
+    text-indent: 10px;
+    @include media(320px) {
+        margin-top: 5px; 
+    }
+    @include media(768px) {
+        padding-top: 10px;
+    } 
 }
 

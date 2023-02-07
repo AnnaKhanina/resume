@@ -21,14 +21,52 @@
     <header class="header">
         <div class="header-container container">
             <ul class="header-list">
-                <li class="header-list__item">
-                    <h1 class="personal__name">Anna Khanina</h1>
-                    <h3 class="personal__profession">Web Developer</h3>
-                    <h5 class="personal__location">Kharkiv, Ukraine</h5>             
-                    <p>Getting a position as a web developer</p> 
+                    <li class="header-list__item">
+                        <div class="header-contacts">
+                            <h3 class="title">Contacts</h3>                
+                            <a class="header-contacts__link" href="tell:068 380 32 14">
+                                <svg class="header-contacts__icon" width="16" height="15">
+                                    <use href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>
+                             +38 068 380 32 14
+                            </a>                      
+                            <a class="header-contacts__link" href="mailto:khanina.anna85@gmail.com">
+                                <svg class="header-contacts__icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-email"></use>
+                                </svg>
+                                khanina.anna85@gmail.com
+                            </a> 
+                            <a class="header-contacts__link" href="https://www.linkedin.com/in/anna-khanina-906649204" target="_blank">
+                                <svg class="header-contacts__icon" width="16" height="15">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg> 
+                                Anna Khanina   
+                            </a> 
+                            <a class="header-contacts__link" href="https://www.instagram.com/svetmiru/" target="_blank">
+                                <svg class="header-contacts__icon" width="16" height="15">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg> 
+                                svetmiru   
+                            </a>                  
+                        </div> 
                 </li>
                 <li class="header-list__item">
-                    <img class="avatar" src="./images/avatar.jpg" alt="my photo">
+                    <div class="header-personal">
+                        <div class="header-personal__data">
+                            <h3 class="header__title title">Anna Khanina</h3>                             
+                            <h4 class="header-personal__profession">Web Developer, React/NodeJS</h4>
+                            <a class="header-personal__link" href="https://www.google.com.ua/maps/place/Maidan+Konstytutsii/@49.9924898,36.235402,17z/data=!4m5!3m4!1s0x4127a0f054bbe88f:0x4d6dc6818b6c0427!8m2!3d49.9919131!4d36.2318274?hl=ru&authuser=0" target="_blank">
+                                <svg class="header-contacts__icon" width="18" height="16">
+                                    <use href="./images/icons.svg#icon-location"></use>
+                                </svg> 
+                                Kharkiv, Ukraine
+                            </a> 
+                            <p class="header-personal__position">Getting a position as a web developer.</p> 
+                        </div>                
+                        <div class="header-personal__image">
+                            <img class="header-avatar" src="./images/avatar.jpg" alt="my photo">
+                        </div> 
+                    </div>                   
                 </li>                
             </ul>      
         </div> 
@@ -37,36 +75,10 @@
     <main>
         <div class="container">                         
             <ul class="main-list">
-                <li class="main-list__item">
-                    <!--Contacts-->
-                    <div class="contacts">
-                        <h3 class="title">Contacts</h3>                
-                        <a class="contacts-type__link" href="tell:068 380 32 14"><svg class="main-contact-icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                         +38 068 380 32 14
-                        </a>                      
-                        <a class="contacts-type__link" href="mailto:khanina.anna85@gmail.com">
-                            <svg class="main-contact-icon" width="16" height="12">
-                                <use href="./images/icons.svg#icon-email"></use>
-                            </svg>
-                            khanina.anna85@gmail.com
-                        </a> 
-                        <a class="contacts-type__link" href="https://www.linkedin.com/in/anna-khanina-906649204" target="_blank">
-                            <svg class="main-contact-icon" width="16" height="12">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg> 
-                            Anna Khanina   
-                        </a> 
-                        <a class="contacts-type__link" href="https://www.instagram.com/svetmiru/" target="_blank">
-                            <svg class="main-contact-icon" width="16" height="12">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg> 
-                            svetmiru   
-                        </a> 
-                    </div>                          
+                <li class="main-list__item">                  
+                    <!--Languages-->                         
                     <div class="languages">
-                        <h3 class="title">Languages</h3>                
+                        <h3 class="main-list-title title">Languages</h3>                
                         <p class="languages__text">
                             <svg class="tech-skills-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-dot-single"></use>
@@ -144,10 +156,11 @@
                 <li class="main-list__item"> 
                     <!--My education-->          
                     <div class="my-education">
-                        <h3 class="title">Education</h3>
+                        <h3 class="main-list-title title">Education</h3>
                         <h4>Kharkiv Radio Engineering College, Programmer</h4>
-                        <p class="experience__period">September 2002-June 2005</p>
-                    </div>                                              
+                        <p class="my-education__period">September 2002-June 2005</p>
+                    </div>
+                    <!--My courses-->                                              
                     <div class="my-courses">
                         <h3 class="title">Courses</h3> 
                        <ul class="my-courses-list">
@@ -166,8 +179,7 @@
                     <!--About me-->
                     <div class="about-me">               
                         <h3 class="title">About me</h3>
-                        <p class="about-me__text">
-                            I am new to web application development. Completed Full Stack Developer courses based on Javascript and its frameworks.
+                        <p class="about-me__text">I am new to web application development. Completed Full Stack Developer courses based on Javascript and its frameworks.
                             I had experience working in a team where the Scrum methodology was applied.
                             I am ready for new opportunities, open to new knowledge and strive to make a quality product.
                         </p>
