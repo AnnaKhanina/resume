@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--header-text-color);
@@ -38,10 +44,11 @@ li {
   --accent-color: #fc8b28;
   --background-color: #f5f4fa;
   --background-color-secondary: #e0ccf7;
+  --title-color: #423852;
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -74,9 +81,10 @@ li {
 }
 
 .title {
+  position: relative;
   margin-bottom: 10px;
   margin-top: 10px;
-  color: var(--header-text-color);
+  color: var(--title-color);
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
@@ -84,9 +92,22 @@ li {
 }
 @media screen and (min-width: 768px) {
   .title {
+    text-align: center;
     font-size: 22px;
     line-height: 30px;
     letter-spacing: 0.03em;
+  }
+  .title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 1px;
+    background-color: var(--title-color);
+    right: 0;
+    margin: 0 auto;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -98,6 +119,10 @@ li {
   }
 }
 
+.header-personal {
+  padding: 0;
+  margin: 0;
+}
 @media screen and (min-width: 480px) {
   .header-personal {
     display: flex;
@@ -145,6 +170,24 @@ li {
   flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .header-contacts-list__item {
+    margin-bottom: 3px;
+  }
+  .header-contacts-list__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-personal-list__item {
+    margin-bottom: 5px;
+  }
+  .header-personal-list__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .header__title {
     font-size: 25px;
@@ -166,25 +209,22 @@ li {
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--accent-color);
 }
-@media screen and (min-width: 768px) {
-  .header-contacts__link {
-    padding: 3px;
-  }
-}
 
 .header-contacts__icon {
   padding-right: 5px;
 }
 
-.header-personal__data,
-.header-personal__image {
-  padding: 5px;
-}
 @media screen and (min-width: 320px) {
   .header-personal__data,
-.header-personal__image {
+  .header-personal__image {
     flex-basis: calc((100% - 20px) / 2);
     padding: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-personal__data,
+  .header-personal__image {
+    padding: 0;
   }
 }
 
@@ -193,9 +233,15 @@ li {
     display: none;
   }
 }
+@media screen and (min-width: 320px) {
+  .header-personal__image {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .header-avatar {
-  width: 80px;
+  width: 100px;
   border-radius: 50px;
 }
 @media screen and (min-width: 320px) {
@@ -203,31 +249,31 @@ li {
     border-radius: 20px;
   }
 }
+@media screen and (min-width: 480px) {
+  .header-avatar {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 120px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-avatar {
-    width: 100px;
+    width: 110px;
+    margin-left: 32px;
+    margin-top: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-avatar {
     width: 110px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .personal__name {
-    margin-bottom: 10px;
+    margin-left: 62px;
+    margin-top: 17px;
   }
 }
 
 @media screen and (min-width: 320px) {
   .header-personal__profession {
     margin-bottom: 5px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header-personal__profession {
-    margin-bottom: 15px;
   }
 }
 
@@ -239,23 +285,15 @@ li {
   color: var(--accent-color);
 }
 
-.header-personal__position {
-  text-indent: 10px;
-}
 @media screen and (min-width: 320px) {
   .header-personal__position {
     margin-top: 5px;
   }
 }
-@media screen and (min-width: 768px) {
-  .header-personal__position {
-    padding-top: 10px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .main-list,
-.my-courses-list {
+  .my-courses-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -279,12 +317,19 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .my-courses__img {
+    margin-left: 55px;
+    margin-bottom: 5px;
+  }
+}
+
 .my-courses__item:first-child {
   margin-bottom: 10px;
 }
 @media screen and (min-width: 1200px) {
   .my-courses__item:last-child {
-    margin-left: 20px;
+    margin-left: 132px;
     margin-bottom: 0;
   }
 }

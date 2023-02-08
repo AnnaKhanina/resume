@@ -22,13 +22,20 @@
     }  
 }
 
+.my-courses__img {
+    @include media(1200px) {
+        margin-left: 55px;
+        margin-bottom: 5px;
+    }
+}
+
 .my-courses__item {
     &:first-child {
         margin-bottom: 10px;
     }
     @include media(1200px) {
         &:last-child {
-            margin-left: 20px;
+            margin-left: 132px;
             margin-bottom: 0;
         }
     }

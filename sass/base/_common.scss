@@ -1,6 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--header-text-color);  
+  color: var(--header-text-color);   
 }
 
 .list {
