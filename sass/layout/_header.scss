@@ -78,6 +78,9 @@
     &:focus {
       color: var(--accent-color);
     }
+    @include media(768px) {
+        margin-bottom: 10px;
+    }
  }
 
  .header-contacts__icon {

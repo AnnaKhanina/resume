@@ -63,6 +63,9 @@
     &:focus {
       color: var(--accent-color);
     }
+    @include media(768px) {
+        margin-bottom: 10px;
+    }
 }
 
 .about-me__text {
@@ -70,10 +73,16 @@
 }
 
 .experience__period {
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 .my-courses__period,
 .my-education__period {
-    padding-top: 5px;
+    padding-top: 15px;
+}
+
+.tech-skills__text,
+.soft-skills__text,
+.languages__text {
+    padding-bottom: 15px;
 }

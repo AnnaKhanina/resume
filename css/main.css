@@ -1,12 +1,7 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: var(--header-text-color);
+  min-height: 100vh;
 }
 
 .list {
@@ -209,6 +204,11 @@ li {
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .header-contacts__link {
+    margin-bottom: 10px;
+  }
+}
 
 .header-contacts__icon {
   padding-right: 5px;
@@ -359,16 +359,27 @@ li {
 .my-projects__link:hover, .my-projects__link:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .my-projects__link {
+    margin-bottom: 10px;
+  }
+}
 
 .about-me__text {
   text-indent: 10px;
 }
 
 .experience__period {
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
 .my-courses__period,
 .my-education__period {
-  padding-top: 5px;
+  padding-top: 15px;
+}
+
+.tech-skills__text,
+.soft-skills__text,
+.languages__text {
+  padding-bottom: 15px;
 }/*# sourceMappingURL=main.css.map */
